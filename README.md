@@ -8,7 +8,7 @@
 - **BAR :** [*polybar*](https://github.com/polybar/polybar)
 - **GTK-THEME :** [*Breeze*](https://www.gnome-look.org/p/1197982/)
 - **ICON-THEME :** [*Papirus*](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
--**WALLPAPER :** *https://i.imgur.com/DFCNiKV.jpg*
+- **WALLPAPER :** *https://i.imgur.com/DFCNiKV.jpg*
 
 
 **Workspaces :**
