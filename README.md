@@ -6,7 +6,9 @@
 - **COMPOSITOR :** [*tryone-compton*](https://github.com/tryone144/compton)
 - **LAUNCHER :** [*rofi*](https://github.com/davatorium/rofi)
 - **BAR :** [*polybar*](https://github.com/polybar/polybar)
-- **WALLPAPER :** *https://i.imgur.com/DFCNiKV.jpg*
+- **GTK-THEME :** [*Breeze*](https://www.gnome-look.org/p/1197982/)
+- **ICON-THEME :** [*Papirus*](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+-**WALLPAPER :** *https://i.imgur.com/DFCNiKV.jpg*
 
 
 **Workspaces :**
