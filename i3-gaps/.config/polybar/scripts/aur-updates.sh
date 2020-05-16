@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if ! updates=$(yay -Qum 2> /dev/null | wc -l); then
+    updates=0
+fi
+
+if [ "$updates" -gt 0 ]; then
+    echo "Aur : $updates"
+else
+    echo ""
+fi
+                                                

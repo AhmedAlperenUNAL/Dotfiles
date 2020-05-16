@@ -1,0 +1,163 @@
+# i3 Config
+ 
+# Mod
+set $mod Mod4
+
+# Font
+font pango:Ubuntu 8
+
+# Borders
+hide_edge_borders none
+
+# Hide Borders
+for_window [class=".*"] border pixel 0
+new_window 1pixel
+
+# i3-gaps Settings
+gaps inner 10
+gaps outer 10
+
+# Wallpaper
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper.jpg
+
+# Use Mouse+$mod To Drag Floating Windows To Their Wanted Position
+floating_modifier $mod
+
+# Terminal
+bindsym $mod+Return exec kitty
+
+# Rofi
+bindsym $mod+d exec sh ~/.config/rofi/launcher/launcher.sh
+ 
+# Kill Focused Window
+bindsym $mod+Shift+q kill
+
+# Change Focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+p focus right
+
+# Alternatively, You Can Use The Cursor Keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move Focused Window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+p move right
+
+# Alternatively, You Can Use The Cursor Keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split In Horizontal Orientation
+bindsym $mod+h split h
+
+# Split In Vertical Rientation
+bindsym $mod+v split v
+
+# Enter Fullscreen Mode For The Focused Container
+bindsym $mod+f fullscreen toggle
+
+# Change Container Layout (Stacked, Tabbed, Toggle split)
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
+
+# Toggle Tiling / Floating
+bindsym $mod+Shift+space floating toggle
+
+# Change Focus Between Tiling / Floating Windows
+bindsym $mod+space focus mode_toggle
+
+# Focus The Parent Container
+bindsym $mod+a focus parent
+
+# Workspace Name
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+
+# Switch To Workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4 
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+
+# Move Focused Container To Workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+
+# Reload The Configuration File
+bindsym $mod+Shift+c reload
+
+# Restart i3 Inplace (Preserves Your Layout/Session, Can Be Used To Upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Lock Screen
+bindsym $mod+shift+x exec sh ~/.config/rofi/powermenu/powermenu.sh
+
+# Resize Window (You Can Also Use The Mouse For That)
+mode "resize" {
+    # These Bindings Trigger As Soon As You Enter The Resize Mode
+
+    # Pressing Left Will Shrink The Window’s Width.
+    # Pressing Right Will Grow The Window’s width.
+    # Pressing Up Will Shrink The Window’s Height.
+    # Pressing Down Will Grow The Window’s Height.
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym ntilde resize grow width 10 px or 10 ppt
+
+    # Same Bindings, But For The Arrow Keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # Back To Normal: Escape"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Take A Screenshot
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/' 
+
+# Screen Brightness Controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+# Pulse Audio Volume Control
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Autostart Apps
+exec_always --no-startup-id sh ~/.config/polybar/launch.sh
+exec_always --no-startup-id dunst
+exec --no-startup-id compton
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id betterlockscreen -u ~/Pictures/Wallpaper.jpg
