@@ -1,6 +1,6 @@
 #!/bin/sh
 
-KEY="1c86aec28067c44e714d6f25c4367fbc"
+KEY="TYPE HERE YOUR API KEY"
 CITY=""
 UNITS="metric"
 SYMBOL="°"
