@@ -1,5 +1,5 @@
 # Dotfiles
-###### i3-gaps :
+###### i3-gaps-17/05/2020 :
 
 - **OS :** [*Arch Linux*](https://www.archlinux.org/) 
 - **WM :** [*i3-gaps*](https://github.com/Airblader/i3)
