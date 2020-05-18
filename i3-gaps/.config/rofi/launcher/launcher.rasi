@@ -92,7 +92,7 @@ element {
 }
 
 element-icon {
-    size:                           65px;
+    size:                           32px;
     border:                         0px;
 }
 
