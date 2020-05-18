@@ -1,5 +1,5 @@
 include "/home/alperen/.gtkrc-2.0.mine"
-gtk-theme-name="Breeze-Dark"
+gtk-theme-name="Arc-Dark"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="Ubuntu 8"
 gtk-cursor-theme-name="Adwaita"
