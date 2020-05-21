@@ -65,7 +65,8 @@ type = internal/xwindow
 
 format = <label>
 format-prefix = 
-format-prefix-padding =1
+format-underline = #50fa7b
+format-prefix-padding = 1
 
 label = %title%
 
