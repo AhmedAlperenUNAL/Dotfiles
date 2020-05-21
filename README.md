@@ -14,7 +14,7 @@
 **Workspaces :**
 ![Image-1](https://i.imgur.com/C9RDMju.jpg)
 **Launcher :**
-![Image-2](https://i.imgur.com/nzpD9IO.png)
+![Image-2](https://i.imgur.com/STGmz8m.png)
 **Powermenu :**
 ![Image-3](https://i.imgur.com/SdEldkA.png)
 
