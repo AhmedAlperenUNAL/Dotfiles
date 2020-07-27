@@ -16,7 +16,7 @@ gaps inner 10
 gaps outer 10
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpaper.png
 
 # Use Mouse+$mod To Drag Floating Windows To Their Wanted Position
 floating_modifier $mod
