@@ -20,7 +20,5 @@
 
 **How To İnstall ?**
 ```
-git clone https://github.com/AhmedAlperenUNAL/Dotfiles.git
-cd Dotfiles/i3-gaps/
-cp -r .config .gtkrc-2.0 .xinitrc ~/
+git clone https://github.com/alper3n-unal/Dotfiles.git && cd Dotfiles/i3-gaps/ && cp -r .config .gtkrc-2.0 .xinitrc ~/
 ```
