@@ -18,7 +18,7 @@
 **Powermenu :**
 ![Image-3](https://i.imgur.com/SdEldkA.png)
 
-**How To İnstall ?**
+**How To Install ?**
 ```
 git clone https://github.com/alper3n-unal/Dotfiles.git && cd Dotfiles/i3-gaps/ && cp -r .config .gtkrc-2.0 .xinitrc ~/
 ```
